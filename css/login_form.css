@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* Set a style for all buttons */
+button {
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.76); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.login-box{
+  position:relative;
+  margin: 70px auto;
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+	border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+}
+.lb-header{
+  position:relative;
+  color: #00415d;
+  margin: 5px 0px 20px 0px;
+  text-align:center;
+  height:50px;
+}
+.lb-header a{
+  text-decoration: none;
+  color: #9E9E9E;
+  font-family: "SF Display Medium";
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+	width:200px;
+	background-color: #EFEFEF;
+	height: 40px;
+	padding-top: 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.lb-header .active{
+  color: #616161;
+  font-size: 18px;
+	background-color: white
+}
+
+.social-login{
+  position:relative;
+  float: center;
+  width: 100%;
+  height:auto;
+  padding: 10px 0 15px 0;
+display: flex;
+	justify-content: center;
+	align-items: center;;
+	margin-left: auto;
+	margin-right: auto;
+}
+.social-login a{
+  position:relative;
+  float: center;
+  width:calc(30%);
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 3%;
+  text-align:center;
+}
+.social-login a i{
+  position: relative;
+  float: center;
+  width: 20px;
+  top: 2px;
+}
+.social-login a:first-child{
+  background-color: #49639F;
+}
+.social-login a:last-child{
+  background-color: #DF4A32;
+}
+.email-login,.email-signup{
+  position:relative;
+  width: calc(100% - 40px);
+  height:auto;
+  margin-top: 20px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-left: 40px;
+}
+.u-form-group{
+  width:100%;
+  margin-bottom: 10px;
+}
+.u-form-group input[type="Email"],
+.u-form-group input[type="password"]{
+  width: 320px;
+  height:45px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #FC85AE;
+  font-size:0.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.u-form-group input:focus{
+  border-color: #FC85AE;
+}
+.u-form-group button{
+  width:90%;
+  background-color: #FFF7F2;
+  border: none;
+  outline: none;
+  color: #FC85AE;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 14px 0;
+  border-radius: 10px;
+	font-family:"SF Display Medium";
+	 -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+}
+.u-form-group button:hover
+{
+	background-color:#FFDCDD;
+}
+.forgot-password{
+  width:50%;
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+.u-form-group a
+{
+	font-family: "SF Display Thin";
+	text-decoration: none;
+}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Add padding to containers */
+.reg_container {
+  padding: 50px;
+  background-color: white;
+	width: 250px;
+	heigth: 300px;
+	float: right;
+	position: relative;
+	right: 200px;
+	top: 30px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 3px 6px 1px #D9C8C8;
+box-shadow: 0 3px 6px 1px #D9C8C8;
+}
+
+/* Full-width input fields */
+.reg_container input[type="text"], 
+ .reg_container input[type="password"] {
+  width: 100%;
+  padding: 15px 0 15px 5px;
+  margin: 5px 0px 15px 0;
+  display: inline-block;
+  border: 1px solid #FC85AE;
+  background: #FFF7F2;
+	border-radius: 10px;
+	color:#FC85AE
+}
+.reg_container input[type="text"]:focus, 
+.reg_container input[type="password"]:focus {
+  background-color: #FFF7F2;
+  outline: none;
+	color: #FC85AE;
+	
+}
+
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #FFF7F2;
+  color: #FC85AE;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+.paragraph a {
+  color: #FC85AE;
+	text-decoration: none
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+::placeholder {
+  color: #FC85AE;
+  opacity: 1;
+	font-family: 'SFProDisplay Regular';
+}
+
+.register_title
+{
+	font-size: 30px;
+	color:#FC85AE;
+	text-align: center;
+	font-family: "SFProDisplay Medium"
+	
+}
+.textsize
+{
+	font-size: 10px;
+	font-family: "SFProDisplay Regular"
+}
+.slider_position
+{
+	position: relative;
+	left: -60px;
+}

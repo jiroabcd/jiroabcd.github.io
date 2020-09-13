@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="css/tab.css">
+	<link rel="stylesheet" href="css/font.css">
+
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, '25sao')" id="defaultOpen">
+	  <img src="images/ICON/icon vip1.png" height="70px"><br>
+	    25 sao</button>
+	
+  <button class="tablinks" onclick="openCity(event, '50sao')">
+	  <img src="images/ICON/icon vip2.png" height="70px"><br>
+	  50 sao</button>
+	
+  <button class="tablinks" onclick="openCity(event, '150sao')">
+	  <img src="images/ICON/icon vip3.png" height="70px"><br>
+	  150 sao</button>
+	
+	<button class="tablinks" onclick="openCity(event, '250sao')">
+		<img src="images/ICON/icon vip4.png" height="70px"><br>
+		250 sao</button>
+	
+	<button class="tablinks" onclick="openCity(event, '500sao')">
+		<img src="images/ICON/icon vip5.png" height="70px"><br>
+		500 sao</button>
+</div>
+
+<div id="25sao" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="50sao" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="150sao" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+	<div id="250sao" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+	<div id="500sao" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+	
+	
+	
+	
+	
+	<div class="tab">
+  <button class="tablinks2" onclick="openCity(event, 'dangky')" id="defaultOpen2">
+	  <img src="images/ICON/icon vip1.png" height="70px"><br>
+	    25 sao</button>
+	
+  <button class="tablinks2" onclick="openCity(event, 'quetma')">
+	  <img src="images/ICON/icon vip2.png" height="70px"><br>
+	  50 sao</button>
+	
+  <button class="tablinks2" onclick="openCity(event, 'thuthapsao')">
+	  <img src="images/ICON/icon vip3.png" height="70px"><br>
+	  150 sao</button>
+</div>
+
+<div id="dangky" class="tabcontent2">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="quetma" class="tabcontent2">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="thuthapsao" class="tabcontent2">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+	
+	
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	document.getElementById("defaultOpen").click();
+</script>
+	
+	
+
+</body>
+</html>

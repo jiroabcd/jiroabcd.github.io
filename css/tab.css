@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tab {
+  overflow: hidden;
+  background-color: transparent;
+	height: 150px;
+	width: 100%;
+	display: flex;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s;
+opacity: 0.7;
+	filter: grayscale(100%);
+	font-family: "SF Display Regular";
+	width: 80px;
+	margin-left: 20px;
+	margin-right: 30px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-bottom: medium #FC85AE solid;
+	filter: grayscale(50%)
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	opacity: 1;
+	filter: grayscale(0%);
+	 border-bottom: 5px #FC85AE solid;
+	font-family: 'SF Display Semi Bold';
+}
+.tab button.active2 {
+	opacity: 1;
+	filter: grayscale(0%);
+	 border-bottom: 5px #FC85AE solid;
+	font-family: 'SF Display Semi Bold';
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+	height: 400px;
+	width: 100%;
+	background-color: #FBEEE8;
+	animation: fadeEffect 1s; /* Fading effect takes 1 second */
+	-webkit-box-shadow:inset 0 10px 5px -10px rgba(0,0,0,0.5);
+box-shadow:inset 0 10px 5px -10px rgba(0,0,0,0.5);
+}
+.innerContain {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+	height: 300px;
+	width: 100%;
+	background-color: #FBEEE8;
+	animation: fadeEffect 1s; /* Fading effect takes 1 second */
+-webkit-box-shadow:inset 0 10px 5px -10px rgba(0,0,0,0.5);
+box-shadow:inset 0 10px 5px -10px rgba(0,0,0,0.5);
+}
+.tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+	height: 500px;
+	background-color: #FBEEE8;
+	animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+
+
+/*accordion*/
+.accordion_container
+{
+	width:calc(100% - 110px) ;
+	height: auto;
+	padding: 20px 0px 20px 110px;
+	-webkit-box-shadow:inset 0 10px 5px -10px rgba(0,0,0,0.5);
+box-shadow:inset 0 10px 5px -10px rgba(0,0,0,0.5);
+	background-color: #FBEEE8;
+}
+.accordion {
+  background-color:transparent;
+  color:rgba(126,126,126,1.00);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: transparent; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+

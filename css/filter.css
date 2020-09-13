@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.filterDiv {
+  float: left;
+  background-color: transparent;
+  color: #ffffff;
+  width: 300px;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+	height:370px;
+}
+
+.show {
+  display: block;
+}
+
+.filter_container {
+  margin-top: 20px;
+  overflow: hidden;
+	height: 1500px;		
+}
+
+/* Style the buttons */
+.btn_filter {
+  border: none;
+  outline: none;
+  margin-right: 35px;
+  background-color: transparent;
+  cursor: pointer;
+	width: auto;
+	font-family: "SF Display Regular";
+	font-size: 15px;
+	color: #212121;
+	width: 100px;
+
+}
+
+.btn_filter:hover {
+  font-family: "SF Display Bold"
+}
+
+.btn_filter.active1 {
+  font-family: 'SF Display Bold';
+  text-decoration: underline
+}
